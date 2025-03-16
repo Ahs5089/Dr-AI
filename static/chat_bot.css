@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.header {
+    background: black; /*  #2c3e50 */
+    color: white;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.disclaimer {
+    color: #ffcccc;
+    font-size: 0.9em;
+}
+
+.chatbox {
+    padding: 20px;
+}
+
+.chatlogs {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 80%;
+}
+
+.bot {
+    background: #e8f4fc;
+    margin-right: auto;
+}
+
+.user {
+    background: #f1f1f1;
+    margin-left: auto;
+}
+
+.chat-input {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #219a52;
+}
+
+.emergency-banner {
+    background: #88d049;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    color: black;
+}
+
+.doctor-button {
+    background: #90d44d;
+    margin: 5px;
+}
+
+.doctor-button:hover {
+    background: #219a52;
+}

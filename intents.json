@@ -1,0 +1,218 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi", "Hello", "Hey", "Howdy", "Good morning", "Hi there", 
+        "Hello there", "Greetings", "Good afternoon", "Good evening",
+        "Hey bot", "Hi Dr. AI", "Hello friend", "Hey there", "Yo",
+        "How are you?", "What's up?", "How's it going?", "Good day"
+      ],
+      "responses": [
+        "Hello! How are you feeling today?",
+        "Hi there! How can I support you?",
+        "Welcome to Dr. AI. How have you been feeling lately?",
+        "Good to see you. What's on your mind today?",
+        "Welcome back. How can I assist you today?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "symptom_assessment",
+      "patterns": [
+        "I feel anxious", "I'm depressed", "I can't sleep", "I'm overwhelmed",
+        "I'm stressed", "I feel sad", "I'm worried all the time",
+        "My mind won't stop racing", "I'm having panic attacks",
+        "I can't stop crying", "I feel numb", "Everything feels pointless",
+        "I'm scared of everything", "I can't concentrate", 
+        "I'm having dark thoughts", "My chest feels tight",
+        "I'm having nightmares", "I feel disconnected",
+        "I'm experiencing flashbacks", "I can't stop overthinking",
+        "I feel like I'm failing", "I'm losing control",
+        "I'm having mood swings", "I feel worthless",
+        "I'm experiencing paranoia", "I can't make decisions",
+        "I'm having memory problems", "I feel physically exhausted",
+        "I'm having appetite changes", "I feel restless",
+        "I'm experiencing dissociation", "I feel irritable",
+        "I'm having obsessive thoughts", "I feel hopeless"
+      ],
+      "responses": [
+        "I'm sorry you're feeling this way. Let's explore some strategies that might help.",
+        "It sounds tough right now. I'd like to understand more about what you're experiencing.",
+        "Thank you for sharing that with me. Many people experience similar feelings.",
+        "That sounds challenging. Let's break this down together.",
+        "I appreciate you sharing this. Let's explore ways to help you cope."
+      ],
+      "context": ["assessment"],
+      "follow_ups": [
+        "How long have you been feeling this way?",
+        "On a scale of 1-10, how intense is this feeling?",
+        "Have you noticed any specific triggers for these feelings?",
+        "Has anything helped you feel even slightly better?",
+        "How is this affecting your daily life?"
+      ]
+    },
+    {
+      "tag": "crisis_detection",
+      "patterns": [
+        "I want to hurt myself", "I'm suicidal", "I feel hopeless",
+        "I don't want to live anymore", "Everyone would be better off without me",
+        "I have a plan to kill myself", "I'm going to end it all",
+        "Life isn't worth living", "I can't take this anymore",
+        "I want to disappear", "The world would be better without me",
+        "I'm done with life", "I have nothing left to live for",
+        "Death would be a relief", "I'm preparing to die"
+      ],
+      "responses": [
+        "Please contact the Suicide Hotline at 988 immediately. You are not alone and help is available.",
+        "I'm concerned about what you're sharing. Please call the Crisis Helpline at 988 right away. They can provide immediate support.",
+        "Your safety is my top priority. Please reach out to 988 for immediate help from trained professionals."
+      ],
+      "context": ["emergency"]
+    },
+    {
+      "tag": "exercise_recommendations",
+      "patterns": [
+        "Suggest a yoga pose", "Best exercises for stress",
+        "How can I move my body to feel better", "Physical activities for anxiety",
+        "Exercise for depression", "Movement for mental health",
+        "Yoga for anxiety", "Workout ideas for stress relief",
+        "Gentle exercises", "Stretching routines",
+        "Dance therapy", "Outdoor activities",
+        "Mindful movement", "Exercise to calm down",
+        "Physical therapy for mental health"
+      ],
+      "responses": [
+        "Physical movement can really help with mental health. Even a short walk or gentle stretching can make a difference.",
+        "Movement is great for releasing tension. Simple stretches or brief walks can help shift your mood.",
+        "Our bodies and minds are connected. Even 5 minutes of gentle movement can help change how you feel."
+      ],
+      "context": [""],
+      "recommendations": [
+        "Try Child's Pose: kneel on the floor, sit back on your heels, extend arms forward, and rest your forehead on the ground. Breathe deeply for 1-2 minutes.",
+        "A 10-minute walk outside, focusing on what you see, hear, and feel, can help break thought cycles.",
+        "Try progressive muscle relaxation: tense each muscle group for 5 seconds, then release, moving from feet to head.",
+        "Dance to your favorite song for 3 minutes - let your body move freely without judgment.",
+        "Try 'Sun Breath' standing stretch: Reach arms overhead while inhaling, fold forward while exhaling."
+      ]
+    },
+    {
+      "tag": "cbt_techniques",
+      "patterns": [
+        "What is CBT?", "Coping strategies for anger",
+        "How to stop negative thoughts", "Change my thinking patterns",
+        "Cognitive behavioral therapy", "Challenge negative thoughts",
+        "Thought reframing", "Stop catastrophic thinking",
+        "Manage anxious thoughts", "CBT exercises",
+        "Behavior activation", "Cognitive restructuring",
+        "Thought records", "Coping cards",
+        "Behavior experiments", "Worry time"
+      ],
+      "responses": [
+        "Cognitive Behavioral Therapy (CBT) helps identify and change unhelpful thought patterns. It's quite effective for many mental health concerns.",
+        "Our thoughts strongly influence our feelings and behaviors. Working with these connections can be very helpful.",
+        "Recognizing thought patterns is the first step toward changing them. Let me share a simple technique."
+      ],
+      "context": [""],
+      "techniques": [
+        "Try the 'STOP' technique: Stop, Take a breath, Observe your thoughts without judgment, Proceed with more awareness.",
+        "Practice thought challenging: When you notice a negative thought, ask 'What's the evidence for and against this thought?' and 'Is there another way to look at this situation?'",
+        "For worry thoughts, try scheduled worry time: Set aside 15 minutes daily to write out all your worries, then try to postpone worry thoughts until that time.",
+        "Create coping statements: Develop positive affirmations like 'This feeling will pass' or 'I can handle this'.",
+        "Use behavioral activation: Schedule one small positive activity each day, even if you don't feel motivated."
+      ]
+    },
+    {
+      "tag": "referral_system",
+      "patterns": [
+        "I need a therapist", "How do I find help?",
+        "Professional mental health support", "Find a counselor",
+        "Mental health services", "Looking for psychologist",
+        "Need psychiatrist", "Find support groups",
+        "Online therapy options", "Free mental health resources",
+        "Crisis services", "Mental health hotlines",
+        "Teletherapy options", "Low-cost counseling",
+        "Community mental health"
+      ],
+      "responses": [
+        "Speaking with a professional can be incredibly helpful. There are several ways to connect with qualified therapists.",
+        "A mental health professional can provide personalized support. Here are some resources to help you find one.",
+        "It takes courage to seek professional help, and it's often very beneficial. Here are some options to consider."
+      ],
+      "context": [""],
+      "resources": [
+        "The SAMHSA National Helpline (1-800-662-4357) can connect you with local resources.",
+        "Psychology Today has a therapist directory at psychologytoday.com where you can search by location and specialty.",
+        "Many areas have community mental health centers that offer services on a sliding fee scale based on income.",
+        "BetterHelp (betterhelp.com) offers online therapy with licensed professionals.",
+        "The Crisis Text Line provides free 24/7 support by texting HOME to 741741."
+      ]
+    },
+    {
+      "tag": "self_care",
+      "patterns": [
+        "What can I do myself", "Self-care tips",
+        "How to feel better", "Simple ways to improve mood",
+        "Easy mental health practices", "Daily wellness routines",
+        "Quick self-care ideas", "Mental health first aid",
+        "Emotional first aid", "Stress relief techniques",
+        "Calming strategies", "Grounding exercises",
+        "Mindfulness practices", "Relaxation techniques",
+        "Emotional regulation"
+      ],
+      "responses": [
+        "Self-care is an important part of mental wellness. Even small actions can make a difference.",
+        "Taking care of yourself doesn't have to be complicated. Simple daily practices can help support your mental health.",
+        "Building self-care into your routine can help create stability and resilience."
+      ],
+      "context": [""],
+      "practices": [
+        "Try the 5-4-3-2-1 grounding exercise: Name 5 things you can see, 4 things you can touch, 3 things you can hear, 2 things you can smell, and 1 thing you can taste.",
+        "Practice a brief daily gratitude ritual - write down 3 specific things you appreciate each day.",
+        "Set a timer for just 2 minutes of focused deep breathing - inhale for 4 counts, hold for 2, exhale for 6.",
+        "Create a 'comfort box' with items that engage your senses (soft fabric, calming scents, soothing music).",
+        "Try bilateral stimulation: Alternate tapping left and right sides of your body to help calm the nervous system."
+      ]
+    },
+    {
+      "tag": "sleep_help",
+      "patterns": [
+        "I can't sleep", "Insomnia help",
+        "Better sleep tips", "How to fall asleep",
+        "Sleep problems", "Nighttime anxiety",
+        "Waking up anxious", "Sleep schedule help",
+        "Nightmares", "Sleep paralysis",
+        "Restless sleep", "Too much sleep",
+        "Sleep and depression", "Circadian rhythm",
+        "Sleep hygiene"
+      ],
+      "responses": [
+        "Sleep difficulties can significantly impact how we feel. There are several evidence-based approaches that might help.",
+        "Sleep and mental health are closely connected. Improving sleep often helps with many emotional challenges.",
+        "Sleep problems are very common, especially during stressful periods. Let me share some approaches that have helped others."
+      ],
+      "context": [""],
+      "practices": [
+        "Try to keep a consistent sleep schedule, going to bed and waking up at the same time each day, even on weekends.",
+        "Develop a wind-down routine: dim the lights, avoid screens for 30-60 minutes before bed, and try reading or gentle stretching.",
+        "If you can't fall asleep after 20 minutes, get up and do something relaxing in dim light until you feel sleepy again.",
+        "Practice the 4-7-8 breathing technique: Inhale for 4 counts, hold for 7, exhale for 8.",
+        "Try progressive muscle relaxation starting from your toes and working up to your head."
+      ]
+    },
+    {
+      "tag": "doctor_escalation",
+      "patterns": [
+        "I need a real doctor",
+        "Connect me to a therapist",
+        "Professional help",
+        "Book appointment"
+      ],
+      "responses": [
+        "I'm connecting you to our partner network of licensed professionals. Please choose an option:",
+        "Let me help you find professional support. What type of consultation would you prefer?"
+      ],
+      "context": ["escalation"]
+    }
+  ]
+}

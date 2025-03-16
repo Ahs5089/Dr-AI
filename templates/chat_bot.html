@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dr' AI Mental Health Assistant</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='chat_bot.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Dr' AI Mental Health Assistant</h1>
+            <div class="emergency-banner">
+                Need immediate help? <button onclick="connectToDoctor()">Talk to a Real Doctor Now</button>
+            </div>
+            <p class="disclaimer">⚠️ This is not a substitute for professional care. In crisis? Call 988</p>
+        </div>
+        <div class="chatbox">
+            <div class="chatlogs" id="chatlogs">
+                <div class="bot message">Hello! I'm your AI mental health assistant. How can I help you today?</div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Type your message here...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='chat_bot.js') }}"></script>
+</body>
+</html>
